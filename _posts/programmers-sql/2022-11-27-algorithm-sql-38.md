@@ -9,8 +9,6 @@ toc: true
 toc_sticky: true
 toc_label : "목차"
 toc_icon: "bars"
-
-published: false
 ---
 
 <small>SQL 고득점 Kit - JOIN 문제</small>
@@ -47,9 +45,13 @@ published: false
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
-```markdown
-1. 
-```
+1. 리뷰 정보가 포함된 REST_REVIEW 테이블을 고객 아이디로 그룹화하고 리뷰 횟수를 집계하는 REST_REVIEW와 JOIN한다.
+  - 고객 아이디를 기준으로 고객별로 리뷰를 몇번남겼는지 알기 위함
+  - 리뷰 횟수를 기준으로 정렬하고 리뷰 1위 정보만 불러와 기존의 REST_REVIEW 테이블과 합치기
+2. 회원 정보가 포함된 MEMBER_PROFILE 테이블을 고객 아이디를 기준으로 JOIN 한다.
+3. 고객 이름과 리뷰 텍스트, 리뷰 작성일(연월일 형태) 정보를 불러온다.
+4. 출력할 데이터는 리뷰 작성일과 리뷰 텍스트를 기준으로 오름차순 정렬한다.
+
 
 ## (2) 코드 작성
 ```sql
@@ -70,8 +72,12 @@ ORDER BY REVIEW_DATE, REVIEW_TEXT
 ```
 
 ## (3) 코드 리뷰 및 회고
-- 
-
+- 리뷰를 가장 많이 남긴 회원 정보를 불러오기 위해 ```JOIN-SELECT-FROM-GROUP BY-ORDER BY-LIMIT``` 로 ```REST_REVIEW```에 ```REST_REVIEW```를 JOIN 했다.
+  - 이렇게 리뷰를 가장 많이 남긴 고객의 리뷰 정보들을 출력할 수 있다.
+- 고객 정보(이름)을 출력하기 위해 ```MEMBER_PROFILE``` 테이블을 고객 아이디를 기준으로 JOIN 했다.
+- 특정 테이블에서 원하는 정보만 불러와 ```JOIN```을 하게 되면 공통되는 부분만 남고 나머지는 출력되지 않는다.(교집합)
+- ```JOIN```으로 테이블을 조금 변형하여 가져올 수 있는 점을 어떤 문제에서든 잘 적용할 수 있도록 연습을 많이 해봐야겠다!
+ 
 <br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
