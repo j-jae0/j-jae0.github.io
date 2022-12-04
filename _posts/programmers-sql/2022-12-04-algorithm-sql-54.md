@@ -66,7 +66,7 @@ ORDER BY PRODUCT_GROUP
 <br>
 
 <div style="text-align : center;">
-<img src="https://ifh.cc/g/A6V09p.jpg" width="500" >
+<img src="https://ifh.cc/g/A6V09p.jpg">
 </div>
 <center><small>프로그래머스 SQL 고득점 Kit All Clear !</small></center>
 
