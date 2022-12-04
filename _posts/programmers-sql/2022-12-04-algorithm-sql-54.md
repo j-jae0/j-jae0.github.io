@@ -65,6 +65,13 @@ ORDER BY PRODUCT_GROUP
 
 <br>
 
+<div style="text-align : center;">
+<img src="https://ifh.cc/g/A6V09p.jpg" width="500" >
+</div>
+<center><small>프로그래머스 SQL 고득점 Kit All Clear !</small></center>
+
+<br>
+
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
 {: .notice}
