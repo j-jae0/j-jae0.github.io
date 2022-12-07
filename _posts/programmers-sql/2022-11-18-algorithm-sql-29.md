@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 입양 시각 구하기(1)"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["DATE_FORMAT", "COUNT", "GROUP BY", "BETWEEN", "ORDER BY", "별칭"]
+tags: ["DATE_FORMAT", "COUNT", "GROUP BY", "BETWEEN", "ORDER BY", "별칭", "🌞"]
 
 toc: true
 toc_sticky: true
