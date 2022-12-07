@@ -15,7 +15,7 @@ toc_icon: "bars"
 
 ***
 
-# <span class="half_HL">✔️ 1873. Calculate Special Bonus</span>
+# <span class="half_HL">1873. Calculate Special Bonus</span>
 
 ## (1) 코드 작성
 ```sql
@@ -35,7 +35,7 @@ ORDER BY EMPLOYEE_ID
 
 <br>
 
-# <span class="half_HL">✔️ 627. Swap Salary</span>
+# <span class="half_HL">627. Swap Salary</span>
 
 ## (1) 코드 작성
 ```sql
@@ -51,7 +51,7 @@ SET SEX = CASE WHEN SEX = 'm' THEN 'f' ELSE 'm' END
 
 <br>
 
-# <span class="half_HL">✔️ 196. Delete Duplicate Emails</span>
+# <span class="half_HL">196. Delete Duplicate Emails</span>
 
 ## (1) 코드 작성
 ```sql

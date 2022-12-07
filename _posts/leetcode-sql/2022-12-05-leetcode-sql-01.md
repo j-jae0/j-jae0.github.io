@@ -15,7 +15,7 @@ toc_icon: "bars"
 
 ***
 
-# <span class="half_HL">✔️ 595. Big Countries</span>
+# <span class="half_HL">595. Big Countries</span>
 
 ## (1) 코드 작성
 ```sql
@@ -32,7 +32,7 @@ WHERE AREA >= 3000000 OR POPULATION >= 25000000
 
 <br>
 
-# <span class="half_HL">✔️ 1757. Recyclable and Low Fat Products</span>
+# <span class="half_HL">1757. Recyclable and Low Fat Products</span>
 
 ## (1) 코드 작성
 ```sql
@@ -49,7 +49,7 @@ WHERE LOW_FATS = 'Y' AND RECYCLABLE = 'Y'
 
 <br>
 
-# <span class="half_HL">✔️ 584. Find Customer Referee</span>
+# <span class="half_HL">584. Find Customer Referee</span>
 
 ## (1) 코드 작성
 ```sql
@@ -69,7 +69,7 @@ WHERE REFEREE_ID != 2 OR REFEREE_ID IS NULL
 
 <br>
 
-# <span class="half_HL">✔️ 183. Customers Who Never Order</span>
+# <span class="half_HL">183. Customers Who Never Order</span>
 
 ## (1) 코드 작성
 ```sql
