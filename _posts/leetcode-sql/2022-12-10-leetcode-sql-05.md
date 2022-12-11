@@ -28,7 +28,11 @@ FROM TREE
 ```
 
 ## (2) 코드 리뷰 및 회고
-- 
+- 문제는 트리의 각 노드를 세 유형(Root, Inner, Leaf)로 나누는 것이다.
+- ```P_ID```를 기준으로 NULL(=Root), ```ID```값이 ```P_ID``` 항목에 있는 경우(=Inner), 두 경우에 해당되지 않는 경우(=Leaf) 이다.
+- 세 유형으로 나누기 위해 ```CASE-WHEN-THEN-ELSE-END``` 절을 사용했다.
+- 특히 Inner 유형 부여를 위해 ```SELECT(DISTINCT)-FROM``` 문을 추가했다.
+- 코드를 작성할 때 습관적으로 ROOT, INNER, LEAF 를 썼다가 **WRONG**이 떠서 당황했다.. 주의해야겠다 :b
 - [👉 문제 보러가기](https://leetcode.com/problems/tree-node/description/?envType=study-plan&id=sql-i)
 
 <br>
