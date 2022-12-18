@@ -33,7 +33,8 @@ where ```LAT_N``` is the northern latitude and ```LONG_W``` is the western longi
 
 # <span class="half_HL">1. Weather Observation Station 1</span>
 Query a list of ```CITY``` and ```STATE``` from the ```STATION``` table.
-<br>**요약** : ```STATION``` 테이블의 ```CITY```, ```STATE``` 컬럼에 해당하는 데이터 출력
+
+**문제 요약** : ```STATION``` 테이블의 ```CITY```, ```STATE``` 컬럼에 해당하는 데이터 출력
 
 ## (1) 코드 작성
 ```sql
@@ -48,7 +49,8 @@ FROM STATION
 # <span class="half_HL">2. Weather Observation Station 3</span>
 
 Query a list of ```CITY``` names from ```STATION``` for cities that have an even ```ID``` number. Print the results in any order, but exclude duplicates from the answer.
-<br>**요약** : ```ID``` 값이 짝수인 ```CITY``` 이름 데이터를 중복 제거하여 출력
+
+**문제 요약** : ```ID``` 값이 짝수인 ```CITY``` 이름 데이터를 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -86,7 +88,7 @@ Find the difference between the total number of ```CITY``` entries in the table 
 > For example, if there are three records in the table with CITY values 'New York', 'New York', 'Bengalaru', there are 2 different city names: 'New York' and 'Bengalaru'. The query returns , because <br>
 **total number of records - number of unique city names = 3 - 2 = 1.**
 
-<br>**요약** : ```CITY```의 전체 데이터 개수와 중복 없이 유일한 값을 가지는 데이터 개수의 차이
+**문제 요약** : ```CITY```의 전체 데이터 개수와 중복 없이 유일한 값을 가지는 데이터 개수의 차이
 
 ## (1) 코드 작성
 ```sql
@@ -100,7 +102,8 @@ FROM STATION
 
 # <span class="half_HL">4. Weather Observation Station 5</span>
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
-<br>**요약** : 가장 짧은 ```CITY``` 이름과 가장 긴 ```CITY``` 이름과 각각의 길이를 출력
+
+**문제 요약** : 가장 짧은 ```CITY``` 이름과 가장 긴 ```CITY``` 이름과 각각의 길이를 출력
 
 ## (1) 코드 작성
 ```python
@@ -123,7 +126,8 @@ LIMIT 1)
 
 # <span class="half_HL">5. Weather Observation Station 6</span>
 Query the list of ```CITY``` names starting with vowels (i.e., ```a```, ```e```, ```i```, ```o```, or ```u```) from ```STATION```. Your result cannot contain duplicates.
-<br>**요약** : 모음으로 시작되는 ```CITY``` 명을 중복 제거하여 출력
+
+**문제 요약** : 모음으로 시작되는 ```CITY``` 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -149,7 +153,8 @@ WHERE CITY REGEXP '^[aeiou]'
 
 # <span class="half_HL">6. Weather Observation Station 7</span>
 Query the list of ```CITY``` names ending with vowels (```a```, ```e```, ```i```, ```o```, ```u```) from ```STATION```. Your result cannot contain duplicates.
-<br>**요약** : 모음으로 끝나는 ```CITY``` 명을 중복 제거하여 출력
+
+**문제 요약** : 모음으로 끝나는 ```CITY``` 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -175,7 +180,8 @@ WHERE CITY REGEXP '[aeiou]$'
 
 # <span class="half_HL">7. Weather Observation Station 8</span>
 Query the list of ```CITY``` names from ```STATION``` which have vowels (i.e., ```a```, ```e```, ```i```, ```o```, and ```u```) as both their first and last characters. Your result cannot contain duplicates.
-<br>**요약** : 첫 자와 끝 자가 모음인 ```CITY``` 명을 중복 제거하여 출력
+
+**문제 요약** : 첫 자와 끝 자가 모음인 ```CITY``` 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -206,7 +212,8 @@ WHERE CITY REGEXP '^[aeiou]' AND CITY REGEXP '[aeiou]$'
 
 # <span class="half_HL">8. Weather Observation Station 9</span>
 Query the list of ```CITY``` names from ```STATION``` that do not start with vowels. Your result cannot contain duplicates.
-<br>**요약** : 모음으로 시작되지 않는 ```CITY``` 명을 중복 제거하여 출력
+
+**문제 요약** : 모음으로 시작되지 않는 ```CITY``` 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -233,7 +240,8 @@ WHERE CITY REGEXP '^[^aeiou]'
 # <span class="half_HL">9. Weather Observation Station 10</span>
 
 Query the list of ```CITY``` names from ```STATION``` that do not end with vowels. Your result cannot contain duplicates.
-<br>**요약** : 모음으로 끝나지 않는 ```CITY``` 명을 중복 제거하여 출력
+
+**문제 요약** : 모음으로 끝나지 않는 ```CITY``` 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -259,7 +267,8 @@ WHERE CITY REGEXP '[^aeiou]$'
 
 # <span class="half_HL">10. Weather Observation Station 11</span>
 Query the list of ```CITY``` names from ```STATION``` that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
-<br>**요약** : 모음으로 시작되지 않거나 모음으로 끝나지 않는 ```CITY``` 명을 중복 제거하여 출력
+
+**문제 요약** : 모음으로 시작되지 않거나 모음으로 끝나지 않는 ```CITY``` 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
@@ -290,7 +299,8 @@ WHERE CITY REGEXP '^[^aeiou]' OR CITY REGEXP '[^aeiou]$'
 
 # <span class="half_HL">11. Weather Observation Station 12</span>
 Query the list of ```CITY``` names from ```STATION``` that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
-<br>**요약** : 모음으로 시작되지 않고 모음으로 끝나지 않는 CITY 명을 중복 제거하여 출력
+
+**문제 요약** : 모음으로 시작되지 않고 모음으로 끝나지 않는 CITY 명을 중복 제거하여 출력
 
 ## (1) 코드 작성 - LIKE
 ```sql
