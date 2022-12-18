@@ -15,9 +15,7 @@ toc_icon: "bars"
 
 ***
 
-# <span class="half_HL">1. Select All</span>
-
-Query all columns (attributes) for every row in the ```CITY``` table.
+# <span class="half_HL">✔️ 테이블 정보</span>
 
 The ```CITY``` table is described as follows:
 
@@ -28,6 +26,14 @@ The ```CITY``` table is described as follows:
 |COUNTRYCODE| VARCHAR2(3)|
 |DISTRICT| VARCHAR2(20)|
 |POPULATION |NUMBER|
+
+<br>
+
+# <span class="half_HL">1. Select All</span>
+
+Query all columns (attributes) for every row in the ```CITY``` table.
+
+**문제 요약** : ```CITY``` 테이블의 모든 행에 대한 모든 열 출력
 
 ```sql
 SELECT *
@@ -42,15 +48,7 @@ FROM CITY
 
 Query all columns for a city in ```CITY``` with the ID 1661.
 
-The ```CITY``` table is described as follows:
-
-|Field|Type|
-|:----|:---|
-|ID| NUMBER|
-|NAME| VARCHAR2(17)|
-|COUNTRYCODE| VARCHAR2(3)|
-|DISTRICT| VARCHAR2(20)|
-|POPULATION |NUMBER|
+**문제 요약** : ```ID```가 ```1661```인 모든 데이터 출력
 
 ```sql
 SELECT *
@@ -65,15 +63,7 @@ WHERE ID = 1661
 # <span class="half_HL">3. Japanese Cities' Attributes</span>
 Query all attributes of every Japanese city in the ```CITY``` table. The ```COUNTRYCODE``` for Japan is ```JPN```.
 
-The ```CITY``` table is described as follows:
-
-|Field|Type|
-|:----|:---|
-|ID| NUMBER|
-|NAME| VARCHAR2(17)|
-|COUNTRYCODE| VARCHAR2(3)|
-|DISTRICT| VARCHAR2(20)|
-|POPULATION |NUMBER|
+**문제 요약** : ```COUNTRYCODE```가 ```JPN```인 데이터의 모든 열 출력
 
 ```sql
 SELECT *
@@ -88,15 +78,8 @@ WHERE COUNTRYCODE = 'JPN'
 # <span class="half_HL">4. Japanese Cities' Names</span>
 Query the names of all the Japanese cities in the ```CITY``` table. The ```COUNTRYCODE``` for Japan is ```JPN```.
 
-The ```CITY``` table is described as follows:
+**문제 요약** : ```COUNTRYCODE```가 ```JPN```인 데이터의 ```NAME``` 컬럼 출력
 
-|Field|Type|
-|:----|:---|
-|ID| NUMBER|
-|NAME| VARCHAR2(17)|
-|COUNTRYCODE| VARCHAR2(3)|
-|DISTRICT| VARCHAR2(20)|
-|POPULATION |NUMBER|
 
 ```sql
 SELECT NAME
@@ -111,15 +94,10 @@ WHERE COUNTRYCODE = 'JPN'
 # <span class="half_HL">5. Revising the Select Query I</span>
 Query all columns for all American cities in the ```CITY``` table with populations larger than ```100000```. The ```CountryCode``` for America is USA.
 
-The ```CITY``` table is described as follows:
-
-|Field|Type|
-|:----|:---|
-|ID| NUMBER|
-|NAME| VARCHAR2(17)|
-|COUNTRYCODE| VARCHAR2(3)|
-|DISTRICT| VARCHAR2(20)|
-|POPULATION |NUMBER|
+**문제 요약**
+1. ```POPULATION```이 100000보다 큰 데이터
+2. ```COUNTRYCODE```가 ```USA```인 데이터
+3. 1, 2번을 만족한 데이터의 모든 열을 출력
 
 ```sql
 SELECT *
@@ -135,20 +113,15 @@ WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA'
 
 Query the ```NAME``` field for all American cities in the ```CITY``` table with populations larger than ```120000```. The CountryCode for America is ```USA```.
 
-The ```CITY``` table is described as follows:
-
-|Field|Type|
-|:----|:---|
-|ID| NUMBER|
-|NAME| VARCHAR2(17)|
-|COUNTRYCODE| VARCHAR2(3)|
-|DISTRICT| VARCHAR2(20)|
-|POPULATION |NUMBER|
+**문제 요약**
+1. ```POPULATION```이 120000보다 큰 데이터
+2. ```COUNTRYCODE```가 ```USA```인 데이터
+3. 1, 2번을 만족한 데이터의 ```NAME``` 열만 출력
 
 ```sql
 SELECT NAME
 FROM CITY 
-WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA'
+WHERE POPULATION > 120000 AND COUNTRYCODE = 'USA'
 ```
 
 [👉 Revising the Select Query II 문제 보러가기](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true)
