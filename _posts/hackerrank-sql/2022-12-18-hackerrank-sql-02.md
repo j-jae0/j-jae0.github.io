@@ -106,7 +106,7 @@ Query the two cities in STATION with the shortest and longest CITY names, as wel
 **문제 요약** : 가장 짧은 ```CITY``` 이름과 가장 긴 ```CITY``` 이름과 각각의 길이를 출력
 
 ## (1) 코드 작성
-```python
+```sql
 (SELECT CITY, LENGTH(CITY)
 FROM STATION
 ORDER BY LENGTH(CITY), CITY
