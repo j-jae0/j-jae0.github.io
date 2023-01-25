@@ -1,5 +1,5 @@
 ---
 title: "About Me"
-layout: single
+layout: post
 permalink: /about-me/
 ---
