@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 3. 대여 횟수가 많은 자동차들의 
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["MONTH", "DATE_FORMAT", "REGEXP", "COUNT", "GROUP BY"]
 
 toc: true
 toc_sticky: true
