@@ -106,6 +106,7 @@ WHERE NAME LIKE "Milk" AND NAME LIKE "Yogurt"
 
 |ID|CART_ID|NAME|PRICE|
 |:--|:-----|:---|:----|
+| | | |
 
 - 위와 같은 이유로 AND가 아닌 OR를 사용했다.
 
