@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 우유와 요거트가 담긴 장�
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["GROUP_CONCAT", "LIKE", "GROUP BY"]
+tags: ["GROUP_CONCAT", "LIKE", "GROUP BY", "🌞"]
 
 toc: true
 toc_sticky: true
@@ -11,8 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-<small>오류 해결🌞(Every derived table must have its own alias)</small><br>
-<small>Summer/Winter Coding(2019)</small>
+<small>Summer/Winter Coding(2019) 문제, 오류 해결🌞</small>
 
 ***
 
