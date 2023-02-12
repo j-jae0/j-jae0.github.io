@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 SQL] Lv 4. "
+title:  "[프로그래머스 SQL] Lv . "
 layout: single
 
 categories: "Algorithm_SQL"
