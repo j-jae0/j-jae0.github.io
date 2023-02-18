@@ -73,6 +73,18 @@ ORDER BY T1.CAR_ID DESC
 ## 🤔 THINK
 나는 서브쿼리와 ```JOIN```을 통해 데이터를 출력했지만 또 다른 방법으로 불러온다면 대여 가능한 자동차 정보 테이블을 ```FROM```으로 불러오고, ```WHERE``` 문에 대여 시작일이 10일인 ```CAR_ID```를 포함한다는 조건과 자동차 종류가 세단인 조건을 ```AND``` 로 불러오는 것도 가능할 것이다.
 
+<u>생각한 코드는 아래와 같고, 제출 후 채점하기를 했을 때 정답 sign이 떴다.</u>
+
+```sql
+SELECT CAR_ID
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE CAR_TYPE = "세단" 
+  AND CAR_ID IN (SELECT CAR_ID 
+                 FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+                 WHERE MONTH(START_DATE) = "10")
+ORDER BY CAR_ID DESC
+```
+
 <br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
