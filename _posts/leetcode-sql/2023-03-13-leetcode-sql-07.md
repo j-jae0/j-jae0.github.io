@@ -16,7 +16,7 @@ toc_icon: "bars"
 ***
 
 # <span class="half_HL">197. Rising Temperature</span>
-이전 날짜(어제)에 비해 온도가 높은 모든 날짜의 Id를 찾는 SQL 쿼리를 작성하십시오.
+이전 날짜(어제)에 비해 온도가 높은 모든 날짜의 Id를 찾는 SQL 쿼리를 작성하십시오.<br>
 테이블(```Weather```)은 아래와 같다.
 
 | Column Name | Type |
@@ -46,8 +46,7 @@ WHERE t1.temperature > t2.temperature
 <br>
 
 # <span class="half_HL">607. Sales Person</span>
-이름이 "RED"인 회사와 관련된 주문이 없는 모든 영업 사원의 이름을 보고하는 SQL 쿼리를 작성하십시오.
-
+이름이 "RED"인 회사와 관련된 주문이 없는 모든 영업 사원의 이름을 보고하는 SQL 쿼리를 작성하십시오.<br>
 테이블: ```SalesPerson```
 
 | Column Name | Type |
