@@ -67,7 +67,7 @@ GROUP BY date_id, make_name
 
 ## (2) 코드 리뷰 및 회고
 - 문제는 날짜와 회사명에 대해 고유한 lead와 고유한 partner 수를 구하는 것이다.
-- 문제를 만족하기 위해 날짜와 회사명을 기준으로 그룹화하고 ```SELECT``` 문에서 lead와 partner를 ```DISTINCT```로 중복값을 제거하여 수를 세었다. 
+- 문제를 만족하기 위해 날짜와 회사명을 기준으로 그룹화하고 ```SELECT``` 문에서 lead와 partner를 ```DISTINCT```로 중복값을 제거하여 수를 세어 불러왔다. 
 - [👉 문제 보러가기](https://leetcode.com/problems/daily-leads-and-partners/?envType=study-plan&id=sql-i)
 
 <br>
