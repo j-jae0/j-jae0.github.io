@@ -10,6 +10,40 @@ search: false
 
 
 // 내가 추가한 폰트 리스트
+@font-face {
+    font-family: 'Hallym';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'Hallym';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'Hallym';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.ttf') format("truetype");
+    font-display: swap;
+} 
+
 @import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
 
 @font-face {
