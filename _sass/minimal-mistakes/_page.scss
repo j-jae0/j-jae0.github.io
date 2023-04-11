@@ -149,6 +149,7 @@ body {
     font-family: 'MapoPeacefull';
     background: #699ea0; // 스킨 변경 전 #E9ECEF; background: $code-background-color;
     border-radius: $border-radius;
+    color: black; // 내가 추가한 것
 
     &::before,
     &::after {
