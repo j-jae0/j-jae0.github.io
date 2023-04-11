@@ -90,6 +90,13 @@ del a {
   border-radius: 6px;
   color: wheat;
   // background-color: #FAF3F3;
+
+  // 내가 추가한 것 : 마우스 대면 글자색 흰색으로 변경
+  &:hover {
+    color: white;
+    outline: 0;
+  }
+
 }
 
 
