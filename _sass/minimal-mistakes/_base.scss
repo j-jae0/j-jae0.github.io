@@ -97,6 +97,11 @@ del a {
     outline: 0;
   }
 
+  // 방문 기록있을 때 색상 흰색으로 변경
+  &:visited {
+    color: white;
+  }
+
 }
 
 
