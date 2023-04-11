@@ -108,7 +108,10 @@ fieldset {
 }
 
 /* 내가 추가한 것 ~ 형광펜 기능*/
-.HL {background-color: #fff5b1;}
+.HL {
+  background-color: #fff5b1;
+  color: black; //내가 추가한 것
+}
 
 /* 내가 추가한 것 ~ 형광펜 밑줄 기능*/
 .half_HL {background-color: #00ff0000;} /*{background: linear-gradient(to top, #EF9DA1 40%, transparent 0%);}*/
