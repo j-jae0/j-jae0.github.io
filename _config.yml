@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jaeyoung Jung"
-  avatar           : "/assets/images/me.jpg"
-  bio              : "기록하며 성장하는 중🌱"
+  name             : "정재영"
+  avatar           : "https://yt3.ggpht.com/HAW0DwztaccF_6W1XxhAtiYp2kXDTidmTzqoHnmgN-tGzEX9JHxAdBb1XtxHhSuRC5R4sNA2=s240-c-k-c0x00ffffff-no-rj" # "/assets/images/me.jpg"
+  bio              : "기록하며 성장하는 중 🌱"
   location         : # "South Korea"
   email            : #
   links:
