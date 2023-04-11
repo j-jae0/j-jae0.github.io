@@ -350,13 +350,13 @@ body {
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid wheat; // mix(#000, $border-color, 25%);
+  border: 1px solid wheat;
   border-radius: $border-radius;
-  color: wheat; // 내가 추가한 것
+  color: wheat;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: white;
   }
 }
 
