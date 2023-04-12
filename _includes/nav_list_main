@@ -131,7 +131,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Math" %}
-                        <li><a href="/categories/Github-Blog" class="">ㄴ 선형대수학/통계 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Math" class="">ㄴ 선형대수학/통계 ({{category[1].size}})</a></li>
                     {% endif %}
             {% endfor %}
             </ul>
