@@ -85,7 +85,7 @@
                 {% endfor %}
             </ul>
         
-        <!-- 멋사 ais7 -->
+        <!-- 멋사 ais7
         <span class="nav__sub-title">멋쟁이사자처럼 ais7</span>
             <ul>
                 {% for category in site.categories %}
@@ -107,7 +107,7 @@
                         <li><a href="/categories/Special_lecture_ais7" class="">ㄴ Special Lecture ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
 
         <!-- 코테 정리 -->
         <span class="nav__sub-title">코딩 테스트</span>
@@ -128,6 +128,13 @@
 
         <!-- 내가 한 일 정리 -->
         <span class="nav__sub-title">Etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Math" %}
+                        <li><a href="/categories/Github-Blog" class="">ㄴ 선형대수학/통계 ({{category[1].size}})</a></li>
+                    {% endif %}
+            {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Github-Blog" %}
