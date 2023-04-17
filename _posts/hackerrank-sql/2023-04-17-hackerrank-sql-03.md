@@ -36,7 +36,7 @@ Query the following two values from the **STATION** table:
 1. The sum of all values in LAT_N rounded to a scale of 2 decimal places.
 2. The sum of all values in LONG_W rounded to a scale of 2 decimal places.
 
-**문제 요약** : ```LAT_N```의 모든 값 합계는 소수점 이하 2자리로 반올림, ```LONG_W```에 있는 모든 값의 합계는 소수점 이하 2자리로 반올림
+**문제 요약** : ```LAT_N```의 모든 값 합계는 소수점 이하 2자리로 반올림, ```LONG_W```에 있는 모든 값의 합계는 소수점 이하 2자리로 반올림하세요.
 
 ## (1) 코드 작성
 ```sql
