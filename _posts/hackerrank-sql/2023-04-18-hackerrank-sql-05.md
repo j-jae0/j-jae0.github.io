@@ -38,7 +38,6 @@ The ```EMPLOYEES``` table is described as follows:
 **Note**: Salary is per month. <br>
 **Constraints**: 1000 < Salary < 10^5
 
-
 The ```EMPLOYEE``` table is described as follows:
 
 |Column|Type|
