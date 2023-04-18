@@ -27,8 +27,6 @@ The ```CITY``` table is described as follows:
 |DISTRICT |VARCHAR2 (20)|
 |POPULATION| NUMBER|
 
-<br>
-
 The ```EMPLOYEES``` table is described as follows:
 
 |Column|Type|
@@ -40,9 +38,8 @@ The ```EMPLOYEES``` table is described as follows:
 **Note**: Salary is per month. <br>
 **Constraints**: 1000 < Salary < 10^5
 
-<br>
 
-The ```Employee``` table is described as follows:
+The ```EMPLOYEE``` table is described as follows:
 
 |Column|Type|
 |:-----|:---|
