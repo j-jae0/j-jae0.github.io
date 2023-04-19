@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 5. 상품을 구매한 회원 비율 구하
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["ROUND", "COUNT", "YEAR", "MONTH", "JOIN", "DISTINCT", "GROUP BY", "LIKE", "ORDER BY", "WHERE"]
+tags: ["ROUND", "COUNT", "YEAR", "MONTH", "JOIN", "DISTINCT", "LIKE"]
 
 toc: true
 toc_sticky: true
