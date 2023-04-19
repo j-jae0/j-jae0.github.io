@@ -46,12 +46,12 @@ The ```COUNTRY``` table are described as follows:
 | CAPITAL | VARCHAR2 (4) |
 | CODE2 | VARCHAR2 (2) |
 
+**참고**: ```CITY.CountryCode``` 와 ```COUNTRY.Code``` 는 동일한 컬럼이다.
+
 <br>
 
 # 1. Population Census
 Given the ```CITY``` and ```COUNTRY``` tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
-
-**참고**: ```CITY.CountryCode``` 와 ```COUNTRY.Code``` 는 동일한 컬럼이다.
 
 **문제 요약** : CONTINENT가 'Asia'인 모든 도시의 인구 합계를 불러온다.
 
@@ -69,8 +69,6 @@ WHERE T1.continent = 'Asia'
 
 # 2. African Cities
 Given the ```CITY``` and ```COUNTRY``` tables, query the names of all cities where the CONTINENT is 'Africa'.
-
-**참고**: ```CITY.CountryCode``` 와 ```COUNTRY.Code``` 는 동일한 컬럼이다.
 
 **문제 요약** : CONTINENT가 'Africa'인 모든 도시의 이름을 불러온다.
 
