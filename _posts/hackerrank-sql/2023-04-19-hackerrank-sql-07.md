@@ -36,7 +36,7 @@ The ```COUNTRY``` table are described as follows:
 | REGION | VARCHAR2 (25) |
 | SURFACEAREA | NUMBER |
 | INDEPYEAR | VARCHAR2 (5) |
-| POPULATION |  |
+| POPULATION | NUMBER |
 | LIFEEXPECTANCY | VARCHAR2 (4) |
 | GNP | NUMBER |
 | GNPOLD | VARCHAR2 (9) |
