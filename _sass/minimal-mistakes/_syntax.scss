@@ -209,7 +209,9 @@ figure.highlight {
   }
   .nn {
     /* Name.Namespace */
-    color: $base0a;
+    // import 라이브러리 색상
+    // 기존 : color: $base0a;
+    color: $base05;
   }
   .nx {
     /* Name.Other */
