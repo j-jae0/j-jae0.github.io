@@ -166,6 +166,7 @@
 
 .author__name {
   margin: 0;
+  font-family: 'UhBeeSe_hyun'; //내가 추가한 것
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -179,6 +180,7 @@
 
 .author__bio {
   margin: 0;
+  font-family: 'UhBeeSe_hyun'; //내가 추가한 것
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -190,7 +192,8 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  // font-family: $sans-serif; -> 기존
+  font-family: 'UhBeeSe_hyun'; // 내가 추가한 것
   z-index: 20;
   cursor: pointer;
 
