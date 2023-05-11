@@ -6,9 +6,9 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
-      <!--전체 글 수-->
+      <!--전체 글 수 부분-->
       <li>
-        📂 <span style="font-family:'BCcardB';">전체 게시물 수</style> <span style="font-family:'LeeSeoyun'; color: wheat;">{{sum}}</style> <span style="font-family:'BCcardB'; color: white;">개</style> 
+        📂 <span style="font-family:'BCcardB';">전체 게시물 수</style> <span style="font-family:'UhBeeSe_hyun'; color: wheat;">{{sum}}</style> <span style="font-family:'BCcardB'; color: white;">개</style> 
       </li>
       <li>
 
