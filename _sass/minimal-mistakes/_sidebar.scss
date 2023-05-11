@@ -161,12 +161,12 @@
   a {
     color: inherit;
     text-decoration: none;
+    font-family: 'UhBeeSe_hyun'; //내가 추가한 것
   }
 }
 
 .author__name {
   margin: 0;
-  font-family: 'UhBeeSe_hyun'; //내가 추가한 것
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -180,12 +180,15 @@
 
 .author__bio {
   margin: 0;
-  font-family: 'UhBeeSe_hyun'; //내가 추가한 것
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
+  p {
+    font-family: 'UhBeeSe_hyun'; //내가 추가한 것
+  } //내가 추가한 것
 }
 
 .author__urls-wrapper {
@@ -196,6 +199,10 @@
   font-family: 'UhBeeSe_hyun'; // 내가 추가한 것
   z-index: 20;
   cursor: pointer;
+
+  a {
+    font-family: 'UhBeeSe_hyun'; //내가 추가한 것
+  } //내가 추가한 것
 
   li:last-child {
     a {
