@@ -46,7 +46,7 @@ ORDER BY x
 ```
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_10.png" width="70%">
+<img src="/assets/images/algorithm/hackerrank_10.png" width="85%">
 </div>
 <center><small>쿼리 실행 결과물</small></center>
 
