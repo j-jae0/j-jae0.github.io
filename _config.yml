@@ -20,7 +20,7 @@ title                    : "데이터, 너 혹시 뭐 돼?"
 title_separator          : # "-"
 subtitle                 : # "사부작사부작 기록하는 블로그"
 name                     : "Jaeyoung Jung"
-description              : "데굴데굴데구르르.."
+description              : "데이터와 가까워지는 중"
 url                      : "https://j-jae0.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "j-jae0/j-jae0.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true # false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -41,7 +41,7 @@ comments:
     num_posts            : # (default) : 5
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
+    theme                : "photon-dark" # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
