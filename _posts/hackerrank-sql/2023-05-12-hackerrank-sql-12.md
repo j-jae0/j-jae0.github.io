@@ -19,7 +19,7 @@ toc_icon: "bars"
 [Pivot](https://en.wikipedia.org/wiki/Pivot_table) the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
 
 **Note**: Print NULL when there are no more names corresponding to an occupation.<br>
-[👉 Occupations 문제 보러가기](https://www.hackerrank.com/challenges/occupations/problem?isFullScreen=true)
+[Occupations 문제 보러가기](https://www.hackerrank.com/challenges/occupations/problem?isFullScreen=true)
 
 ## (1) 테이블
 The **OCCUPATIONS** table is described as follows:

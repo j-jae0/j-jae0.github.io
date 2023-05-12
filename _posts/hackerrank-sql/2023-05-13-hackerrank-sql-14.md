@@ -18,10 +18,10 @@ toc_icon: "bars"
 # 1. New Companies
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_14_1.png" width="90%">
+<img src="/assets/images/algorithm/hackerrank_14_1.png">
 </div>
 
-[👉 New Companies 문제 보러가기](https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true)
+[New Companies 문제 보러가기](https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true)
 
 ## (1) 테이블
 The following tables contain company data:

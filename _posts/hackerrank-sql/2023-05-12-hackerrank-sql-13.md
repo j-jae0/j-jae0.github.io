@@ -18,10 +18,10 @@ toc_icon: "bars"
 # 1. Binary Tree Nodes
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_13_1.png" width="90%">
+<img src="/assets/images/algorithm/hackerrank_13_1.png">
 </div>
 
-[👉 Binary Tree Nodes 문제 보러가기](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)
+[Binary Tree Nodes 문제 보러가기](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)
 
 
 ## (1) 문제 이해
