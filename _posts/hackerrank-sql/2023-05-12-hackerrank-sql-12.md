@@ -118,7 +118,7 @@ GROUP BY에 정의하지 않은 컬럼을 SELECT절에서 사용하려면 반드
 
 <br>
 
-# Reference
+# 2. Reference
 - [WiKiDocs 평생 필요한 데이터 분석 - MySQL과 주식 데이터로 재밌게, 4.09.4 GROUP BY 사용 규칙](https://wikidocs.net/132723)
 
 <br>
