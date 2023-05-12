@@ -32,7 +32,7 @@ toc_icon: "bars"
   - 부모 노드만 있다면 'Leaf'
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_13_3.png" width="75%">
+<img src="/assets/images/algorithm/hackerrank_13_3.png" width="60%">
 </div>
 <center><small>예시 (제작: PowerPoint)</small></center>
 
@@ -48,7 +48,7 @@ ORDER BY n
 ```
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_13_2.png" width="75%">
+<img src="/assets/images/algorithm/hackerrank_13_2.png" width="85%">
 </div>
 <center><small>위 쿼리의 실행 결과</small></center>
 
