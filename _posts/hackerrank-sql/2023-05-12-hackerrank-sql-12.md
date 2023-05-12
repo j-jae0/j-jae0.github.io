@@ -1,5 +1,5 @@
 ---
-title:  "[해커랭크 SQL] Advanced Select 문제풀이 (2)"
+title:  "[해커랭크 SQL] Advanced Select 문제풀이 (3)"
 layout: single
 
 categories: "Algorithm_SQL"
@@ -16,8 +16,8 @@ published: false
 
 ***
 
-# 2. Occupations
-Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
+# 1. Occupations
+[Pivot](https://en.wikipedia.org/wiki/Pivot_table) the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
 
 **Note**: Print NULL when there are no more names corresponding to an occupation.<br>
 [👉 Occupations 문제 보러가기](https://www.hackerrank.com/challenges/occupations/problem?isFullScreen=true)
@@ -40,37 +40,6 @@ The **OCCUPATIONS** table is described as follows:
 ## (3) 코드 리뷰
 - 
 
-<br>
-
-# 3. Binary Tree Nodes
-
-**문제 요약** : 
-
-## (1) 코드 작성
-```sql
-
-```
-
-## (2) 코드 리뷰
-- 
-
-[👉 Binary Tree Nodes 문제 보러가기](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)
-
-<br>
-
-# 4. New Companies
-
-**문제 요약** : 
-
-## (1) 코드 작성
-```sql
-
-```
-
-## (2) 코드 리뷰
-- 
-
-[👉 New Companies 문제 보러가기](https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true)
 
 <br>
 
