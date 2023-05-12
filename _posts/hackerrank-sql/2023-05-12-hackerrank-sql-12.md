@@ -74,7 +74,7 @@ GROUP BY idx
 
 <br>
 
-🔍 **이해를 위한 예시**
+### 🔍 이해를 위한 예시
 <div style="text-align : center;">
 <img src="/assets/images/algorithm/hackerrank_12_4.png" width="85%">
 </div>
@@ -107,12 +107,11 @@ GROUP BY idx
 
 <br>
 
-🔍 **실패 경험 회고**<br>
+### 🔍 실패 경험 회고
 idx를 기준으로 그룹화를 하고 직업별로 이름을 출력하려고 위와같이 쿼리를 작성했을 때 위 이미지와 같은 에러가 발생했다. 그룹화를 했으나 SELECT 문에는 GROUP BY와 관련된 함수를 사용하지 않아서(집계처리가 안된 내용이 있어서) 발생한 문제였다. 그래서 IF ~ 에 해당하는 결과를 그대로 출력할 수 있는(변화없이) 집계함수를 찾다가 ```GROUP_CONCAT```을 사용하여 문제를 해결하였다. <br>
 <small>cf. MAX, MIN 등의 집계함수도 사용이 가능했다.</small>
 
-
-🔍 **알게된 점**<br>
+### 🔍 알게된 점
 GROUP BY는 GROUP BY에 컬럼만 SELECT절에 그대로 사용할 수 있다. <br>
 GROUP BY에 정의하지 않은 컬럼을 SELECT절에서 사용하려면 반드시 집계함수 처리를 해야 한다.
 
