@@ -72,6 +72,9 @@ GROUP BY idx
 - GROUP_CONCAT을 사용한 이유는 그룹화했기 때문에 IF문을 단독으로 사용했다가 에러 sign이 떴다. 해결과정은 아래 '실패 코드 공유'에 기록하였다.
 - PARTITION BY는 특정 컬럼을 기준으로(그룹화처럼) 분할한다.
 
+<br>
+
+🔍 **이해를 위한 예시**
 <div style="text-align : center;">
 <img src="/assets/images/algorithm/hackerrank_12_4.png" width="85%">
 </div>
