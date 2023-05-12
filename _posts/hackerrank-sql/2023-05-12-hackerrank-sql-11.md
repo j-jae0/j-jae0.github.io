@@ -79,7 +79,7 @@ FROM (SELECT occupation, COUNT(*) AS occupation_count
 ```
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_11_1.png">
+<img src="/assets/images/algorithm/hackerrank_11.png">
 </div>
 <center><small>성공, 실패 쿼리 결과물 비교</small></center>
 
