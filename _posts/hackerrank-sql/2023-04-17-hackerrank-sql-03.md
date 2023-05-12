@@ -1,5 +1,5 @@
 ---
-title:  "[해커랭크 SQL] AGGREGATION 문제풀이 (1)"
+title:  "[해커랭크 SQL] Aggregation 문제풀이 (1)"
 layout: single
 
 categories: "Algorithm_SQL"

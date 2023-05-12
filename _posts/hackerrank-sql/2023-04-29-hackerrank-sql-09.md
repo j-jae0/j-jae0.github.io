@@ -1,5 +1,5 @@
 ---
-title:  "[해커랭크 SQL] ALTERNATIVE QUERIES 문제풀이 (1)"
+title:  "[해커랭크 SQL] Alternative Queries 문제풀이 (1)"
 layout: single
 
 categories: "Algorithm_SQL"

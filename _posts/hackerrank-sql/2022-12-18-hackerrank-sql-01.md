@@ -1,5 +1,5 @@
 ---
-title:  "[해커랭크 SQL] BASIC SELECT 문제풀이 (1)"
+title:  "[해커랭크 SQL] Basic Select 문제풀이 (1)"
 layout: single
 
 categories: "Algorithm_SQL"
