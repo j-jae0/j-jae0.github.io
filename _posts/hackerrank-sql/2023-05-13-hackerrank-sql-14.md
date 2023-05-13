@@ -32,12 +32,14 @@ The **Company** table is described as follows:
 | founder | String |
 
 The **Lead_Manager** table is described as follows:
+
 | Column | Type |
 |:-------|:-----|
 | lead_manager_code | String |
 | company_code | string |
 
 The **Senior_Manager** table is described as follows:
+
 | Column | Type |
 |:-------|:-----|
 | senior_manager_code | String |
@@ -53,6 +55,7 @@ The **Manager** table is described as follows:
 | company_code | string |
 
 The **Employee** table is described as follows:
+
 | Column | Type |
 |:-------|:-----|
 | employee_code | String|
