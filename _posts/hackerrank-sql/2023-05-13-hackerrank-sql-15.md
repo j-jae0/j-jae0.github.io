@@ -80,6 +80,7 @@ Consider P1(a, c) and  P2(b, d) to be two points on a 2D plane where  are the re
 Query the Euclidean Distance between points P1 and P2 and format your answer to display 4 decimal digits.
 
 ## (1) 문제 이해
+STAION 테이블의 LAT_N과 LONG_W가 좌표의 x, y 값이 되어 최댓값과 최솟값 사이의 유클리드 거리를 구한다. 거리를 구하는 공식은 아래 수식과 같다.
 
 <div style="text-align : center;">
 <img src="/assets/images/algorithm/hackerrank_15_ud.png">
