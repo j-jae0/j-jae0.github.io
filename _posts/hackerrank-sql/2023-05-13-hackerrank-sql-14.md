@@ -24,23 +24,25 @@ toc_icon: "bars"
 [New Companies 문제 보러가기](https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true)
 
 ## (1) 테이블
-The following tables contain company data:
-
-**Company**: The company_code is the code of the company and founder is the founder of the company. 
+The **Company** table is described as follows:
 
 | Column | Type |
 |:-------|:-----|
 | company_code | string |
 | founder | String |
 
-**Lead_Manager**: The lead_manager_code is the code of the lead manager, and the company_code is the code of the working company.
+<br>
+
+The **Lead_Manager** table is described as follows:
 
 | Column | Type |
 |:-------|:-----|
 | lead_manager_code | String |
 | company_code | string |
 
-**Senior_Manager**: The senior_manager_code is the code of the senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company. 
+<br>
+
+The **Senior_Manager** table is described as follows:
 
 | Column | Type |
 |:-------|:-----|
@@ -48,7 +50,9 @@ The following tables contain company data:
 | lead_manager_code | String |
 | company_code | string |
 
-**Manager**: The manager_code is the code of the manager, the senior_manager_code is the code of its senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company. 
+<br>
+
+The **Manager** table is described as follows:
 
 | Column | Type |
 |:-------|:-----|
@@ -57,7 +61,9 @@ The following tables contain company data:
 | lead_manager_code | String |
 | company_code | string |
 
-**Employee**: The employee_code is the code of the employee, the manager_code is the code of its manager, the senior_manager_code is the code of its senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company.
+<br>
+
+The **Employee** table is described as follows:
 
 | Column | Type |
 |:-------|:-----|
