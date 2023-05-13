@@ -27,6 +27,8 @@ The **STATION** table is described as follows:
 | LAT_N | NUMBER |
 | LONG_W | NUMBER |
 
+<small>cf. where LAT_N is the northern latitude and LONG_W is the western longitude.</small>
+
 <br>
 
 # 1. Weather Observation Station 18
