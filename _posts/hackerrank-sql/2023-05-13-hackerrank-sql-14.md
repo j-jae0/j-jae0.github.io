@@ -47,6 +47,7 @@ The **Senior_Manager** table is described as follows:
 | company_code | string |
 
 The **Manager** table is described as follows:
+
 | Column | Type |
 |:-------|:-----|
 | manager_code | String |
