@@ -32,17 +32,20 @@ The **STATION** table is described as follows:
 
 # 1. Weather Observation Station 18
 
-<div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_15_1.png">
-</div>
+Consider P1(a, b) and P2(c, d) to be two points on a 2D plane.
 
-[Weather Observation Station 18 문제 보러가기](https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true)
+- a happens to equal the minimum value in Northern Latitude (LAT_N in STATION).
+- b happens to equal the minimum value in Western Longitude (LONG_W in STATION).
+- c happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
+- d happens to equal the maximum value in Western Longitude (LONG_W in STATION).
+
+Query the Manhattan Distance between points P1 and P2 and round it to a scale of  decimal places.
 
 ## (1) 문제 이해
 STAION 테이블의 LAT_N과 LONG_W가 좌표의 x, y 값이 되어 최댓값과 최솟값 사이의 맨해튼 거리를 구한다. 거리를 구하는 공식은 아래 수식과 같다.
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_15_md.png" width="75%">
+<img src="/assets/images/algorithm/hackerrank_15_md.png" width="70%">
 </div>
 <center><small>맨해튼 거리 공식(제작: PowerPoint)</small></center>
 
@@ -55,7 +58,7 @@ FROM STATION
 ```
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_15_2.png">
+<img src="/assets/images/algorithm/hackerrank_15_1.png">
 </div>
 <center><small>위 쿼리의 실행 결과</small></center>
 
@@ -72,11 +75,9 @@ FROM STATION
 
 # 2. Weather Observation Station 19
 
-<div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_15_3.png">
-</div>
+Consider P1(a, c) and  P2(b, d) to be two points on a 2D plane where  are the respective minimum and maximum values of Northern Latitude (LAT_N) and  are the respective minimum and maximum values of Western Longitude (LONG_W) in STATION.
 
-[Weather Observation Station 19 문제 보러가기](https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true)
+Query the Euclidean Distance between points P1 and P2 and format your answer to display 4 decimal digits.
 
 ## (1) 문제 이해
 
@@ -94,7 +95,7 @@ FROM STATION
 ```
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/hackerrank_15_4.png">
+<img src="/assets/images/algorithm/hackerrank_15_2.png">
 </div>
 <center><small>위 쿼리의 실행 결과</small></center>
 
@@ -110,6 +111,8 @@ FROM STATION
 <br>
 
 # 3. Reference 
+- [Weather Observation Station 18 문제 보러가기](https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true)
+- [Weather Observation Station 19 문제 보러가기](https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true)
 - [Manhattan distance 참고자료](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)
 - [Euclidean distance 참고자료](https://en.wikipedia.org/wiki/Euclidean_distance)
 
