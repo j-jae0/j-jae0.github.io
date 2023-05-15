@@ -31,7 +31,7 @@ The **STATION** table is described as follows:
 
 <br>
 
-# 3. Weather Observation Station 20
+# 1. Weather Observation Station 20
 
 <div style="text-align : center;">
 <img src="/assets/images/algorithm/hackerrank_16_1.png">
