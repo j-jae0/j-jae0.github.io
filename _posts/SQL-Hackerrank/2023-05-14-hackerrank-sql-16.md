@@ -12,7 +12,7 @@ toc_icon: "bars"
 published: false
 ---
 
-<small>해커랭크(HackerRank) MySQL, MEDIUM 1 문제 풀이</small>
+<small>해커랭크(HackerRank) MySQL, 난이도 MEDIUM 1 문제 풀이</small>
 
 ***
 

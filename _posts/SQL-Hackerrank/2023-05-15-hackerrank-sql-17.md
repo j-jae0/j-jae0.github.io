@@ -11,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-<small>해커랭크(HackerRank) MySQL, MEDIUM 문제 'Contest Leaderboard' 풀이</small>
+<small>해커랭크(HackerRank) MySQL, 난이도 MEDIUM 'Contest Leaderboard' 문제 풀이</small>
 
 ***
 
