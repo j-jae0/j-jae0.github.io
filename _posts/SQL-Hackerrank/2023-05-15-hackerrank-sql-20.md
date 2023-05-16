@@ -27,7 +27,7 @@ Hermione decides the best way to choose is by determining the minimum number of 
 
 
 ## (2) 문제 이해
-
+오래된 지팡이를 교체하려고 한다. 
 
 ## (3) 코드 작성
 ```sql
