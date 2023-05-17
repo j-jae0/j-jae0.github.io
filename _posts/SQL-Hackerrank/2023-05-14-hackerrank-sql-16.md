@@ -3,7 +3,7 @@ title:  "[해커랭크 SQL] Aggregation 문제풀이 (5)"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["ROUND", "AVG", "ROW_NUMBER", "OVER", "CEIL", "FLOOR", "COUNT"]
+tags: ["ROUND", "AVG", "ROW_NUMBER", "OVER", "CEIL", "FLOOR", "COUNT", "🌞"]
 
 toc: true
 toc_sticky: true
