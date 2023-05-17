@@ -35,6 +35,7 @@ A median is defined as a number separating the higher half of a data set from th
 [Weather Observation Station 20 문제 보러가기](https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true)
 
 ## (1) 문제 이해
+문제는 LAT_N의 중간값을 구하고 소수점 4자리로 반올림하여 출력하는 것이다.
 
 ## (2) 코드 작성
 ```sql
