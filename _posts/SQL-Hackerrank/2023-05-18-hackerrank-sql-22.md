@@ -3,7 +3,7 @@ title:  "[해커랭크 SQL] Advanced Join 문제풀이 (3)"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["MIN", "NOT IN", "DATEDIFF"]
 
 toc: true
 toc_sticky: true
