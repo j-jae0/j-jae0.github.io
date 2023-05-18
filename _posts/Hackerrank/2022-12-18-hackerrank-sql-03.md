@@ -1,0 +1,55 @@
+---
+title:  "[해커랭크 SQL] Japanese Cities' Attributes"
+layout: single
+
+categories: "Algorithm_SQL"
+
+toc: true
+toc_sticky: true
+toc_label : "목차"
+toc_icon: "bars"
+---
+
+<small>해커랭크(HackerRank) MySQL, 난이도 EASY 문제 풀이</small>
+
+***
+
+# Japanese Cities' Attributes
+Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+
+[Japanese Cities' Attributes 문제 보러가기](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true)
+
+## (1) 테이블 정보
+The **CITY** table is described as follows:
+
+|Field|Type|
+|:----|:---|
+|ID| NUMBER|
+|NAME| VARCHAR2(17)|
+|COUNTRYCODE| VARCHAR2(3)|
+|DISTRICT| VARCHAR2(20)|
+|POPULATION |NUMBER|
+
+## (2) 문제 이해
+COUNTRYCODE가 JPN인 데이터의 모든 열 출력하는 쿼리를 작성한다.
+
+## (3) 코드 작성
+```sql
+SELECT *
+FROM CITY
+WHERE COUNTRYCODE = 'JPN'
+```
+
+<div style="text-align : center;">
+<img src="/assets/images/sql/hackerrank/hackerrank_mysql_3.png" width="85%">
+</div>
+<center><small>위 쿼리의 실행 결과</small></center>
+
+<br>
+
+## (4) 코드 리뷰
+테이블에서 컨트리코드가 JPN인 데이터의 모든 필드를 출력하는 것이기 때문에 WHERE 절에 COUNTRYCODE가 JPN이라는 조건식을 넣었다. SELECT 문에 *를 넣어 조건식에 맞는 행의 모든 열을 출력할 수 있도록 쿼리를 작성했다.
+
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

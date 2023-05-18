@@ -1,0 +1,56 @@
+---
+title:  "[해커랭크 SQL] Weather Observation Station 1"
+layout: single
+
+categories: "Algorithm_SQL"
+
+toc: true
+toc_sticky: true
+toc_label : "목차"
+toc_icon: "bars"
+---
+
+<small>해커랭크(HackerRank) MySQL, 난이도 EASY 문제 풀이</small>
+
+***
+
+# Weather Observation Station 1
+Query a list of CITY and STATE from the STATION table.
+
+[Weather Observation Station 1 문제 보러가기](https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true)
+
+## (1) 테이블 정보
+The **STATION** table is described as follows:
+
+|Field|Type|
+|:----|:---|
+|ID| NUMBER|
+|CITY| VARCHAR2(21)|
+|STATE| VARCHAR2(2)|
+|LAT_N |NUMBER|
+|LONG_W| NUMBER|
+
+<small>cf. where LAT_N is the northern latitude and LONG_W is the western longitude.</small>
+
+## (2) 문제 이해
+테이블에서 모든 데이터의 city, state 정보를 출력하는 쿼리를 작성한다.
+
+## (3) 코드 작성
+```sql
+SELECT CITY, STATE
+FROM STATION
+```
+
+<div style="text-align : center;">
+<img src="/assets/images/sql/hackerrank/hackerrank_mysql_7.png" width="85%">
+</div>
+<center><small>위 쿼리의 실행 결과</small></center>
+
+<br>
+
+## (4) 코드 리뷰
+행을 필터링하는 조건없이 전체 데이터에 대해 컬럼만 CITY, STATE만 불러오기 위해 SELECT 문에 출력하고자 하는 컬럼명만 기입해주었다.
+
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}
