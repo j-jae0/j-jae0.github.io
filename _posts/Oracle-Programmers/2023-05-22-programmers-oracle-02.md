@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 Oracle] Lv 1. 동물의 아이디와 이름"
+title:  "[프로그래머스 Oracle] Lv 1. 어린 동물 찾기"
 layout: single
 
 categories: "Algorithm_Oracle"
@@ -27,23 +27,11 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 |NAME|	VARCHAR(N)|	TRUE|
 |SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
 
-동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요.
-<br>SQL을 실행하면 다음과 같이 출력되어야 합니다.
-
-|ANIMAL_ID|	NAME|
-|:--------|:----|
-|A349996|	Sugar|
-|A350276|	Jewel|
-|A350375|	Meo|
-|A352555|	Harley|
-|A352713|	Gia|
-|A352872|	Peanutbutter|
-|A353259|	Bj|
-
-((이하 생략))
+동물 보호소에 들어온 동물 중 젊은 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 결과는 아이디 순으로 조회해주세요.<br>
+<small>cf. 젊은 동물은 INTAKE_CONDITION이 Aged가 아닌 경우를 뜻함</small>
 
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
-<br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59403?language=oracle)
+<br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59037?language=oracle)
 
 <br>
 
@@ -51,14 +39,16 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 ## (1) Pseudo-Code
 ```markdown
 1. ANIMAL_INS 테이블을 가져온다.
-2. 아이디와 이름값만 반환하여 가져올 수 있도록 SELECT 문에 작성한다. 
-3. ANIMAL_ID를 기준으로 오름차순 정렬한다.
+2. 아이디와 이름값만 반환하여 가져올 수 있도록 SELECT 문에 작성한다.
+3. 젊은 동물만 불러올 수 있도록 WHERE 문에 '상태가 Aged가 아니다'는 조건을 넣는다.
+4. ANIMAL_ID를 기준으로 오름차순 정렬한다.
 ```
 
 ## (2) 코드 작성
 ```sql
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS
+WHERE INTAKE_CONDITION != 'Aged'
 ORDER BY ANIMAL_ID
 ```
 
