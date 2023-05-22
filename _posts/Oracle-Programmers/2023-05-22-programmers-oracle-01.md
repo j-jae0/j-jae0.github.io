@@ -28,19 +28,6 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 |SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
 
 동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요.
-<br>SQL을 실행하면 다음과 같이 출력되어야 합니다.
-
-|ANIMAL_ID|	NAME|
-|:--------|:----|
-|A349996|	Sugar|
-|A350276|	Jewel|
-|A350375|	Meo|
-|A352555|	Harley|
-|A352713|	Gia|
-|A352872|	Peanutbutter|
-|A353259|	Bj|
-
-((이하 생략))
 
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
 <br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59403?language=oracle)
@@ -64,8 +51,6 @@ ORDER BY ANIMAL_ID
 
 ## (3) 코드 리뷰 및 회고
 - EASY 😎
-
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
