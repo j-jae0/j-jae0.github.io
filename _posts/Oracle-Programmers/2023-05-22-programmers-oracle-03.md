@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 Oracle] Lv 1. 동물의 아이디와 이름"
+title:  "[프로그래머스 Oracle] Lv 1. 여러 기준으로 정렬하기"
 layout: single
 
 categories: "Algorithm_Oracle"
@@ -27,10 +27,10 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 |NAME|	VARCHAR(N)|	TRUE|
 |SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
 
-동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요.
+동물 보호소에 들어온 모든 동물의 아이디와 이름, 보호 시작일을 이름 순으로 조회하는 SQL문을 작성해주세요. 단, 이름이 같은 동물 중에서는 보호를 나중에 시작한 동물을 먼저 보여줘야 합니다.
 
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
-<br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59403?language=oracle)
+<br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59404)
 
 <br>
 
@@ -38,15 +38,15 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 ## (1) Pseudo-Code
 ```markdown
 1. ANIMAL_INS 테이블을 가져온다.
-2. 아이디와 이름값만 가져올 수 있도록 SELECT 문에 작성한다. 
-3. ANIMAL_ID를 기준으로 오름차순 정렬한다.
+2. 아이디, 이름, 보호시작일만 가져올 수 있도록 SELECT 문에 작성한다.
+3. 이름을 기준으로 오름차순하고, 만약 이름이 같다면 보호시작일을 기준으로 내림차순 정렬한다.
 ```
 
 ## (2) 코드 작성
 ```sql
-SELECT ANIMAL_ID, NAME
+SELECT ANIMAL_ID, NAME, DATETIME
 FROM ANIMAL_INS
-ORDER BY ANIMAL_ID
+ORDER BY NAME, DATETIME DESC
 ```
 
 ## (3) 코드 리뷰 및 회고

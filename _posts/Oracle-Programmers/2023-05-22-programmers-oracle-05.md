@@ -1,8 +1,9 @@
 ---
-title:  "[프로그래머스 Oracle] Lv 1. 동물의 아이디와 이름"
+title:  "[프로그래머스 Oracle] Lv 1. 이름이 없는 동물의 아이디"
 layout: single
 
 categories: "Algorithm_Oracle"
+tags: ["IS NULL"]
 
 toc: true
 toc_sticky: true
@@ -10,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-<small>SQL 고득점 Kit - SELECT 문제</small>
+<small>SQL 고득점 Kit - IS NULL 문제</small>
 
 ***
 
@@ -27,10 +28,10 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 |NAME|	VARCHAR(N)|	TRUE|
 |SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
 
-동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요.
+동물 보호소에 들어온 동물 중, 이름이 없는 채로 들어온 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬되어야 합니다.
 
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
-<br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59403?language=oracle)
+<br>[👀 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59039)
 
 <br>
 
@@ -38,14 +39,16 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 ## (1) Pseudo-Code
 ```markdown
 1. ANIMAL_INS 테이블을 가져온다.
-2. 아이디와 이름값만 가져올 수 있도록 SELECT 문에 작성한다. 
-3. ANIMAL_ID를 기준으로 오름차순 정렬한다.
+2. 아이디만 가져올 수 있도록 SELECT 문에 작성한다.
+3. 이름이 없는 동물 정보를 불러오기 위해 WHERE 절에 '이름이 존재하지 않는다'는 조건식을 넣는다.
+4. 아이디를 기준으로 오름차순 정렬한다.
 ```
 
 ## (2) 코드 작성
 ```sql
-SELECT ANIMAL_ID, NAME
+SELECT ANIMAL_ID
 FROM ANIMAL_INS
+WHERE NAME IS NULL
 ORDER BY ANIMAL_ID
 ```
 
