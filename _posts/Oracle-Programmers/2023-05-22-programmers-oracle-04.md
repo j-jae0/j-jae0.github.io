@@ -2,7 +2,7 @@
 title:  "[프로그래머스 Oracle] Lv 1. 이름이 있는 동물의 아이디"
 layout: single
 
-categories: "Algorithm_Oracle"
+categories: "Algorithm_SQL"
 tags: ["IS NOT NULL"]
 
 toc: true

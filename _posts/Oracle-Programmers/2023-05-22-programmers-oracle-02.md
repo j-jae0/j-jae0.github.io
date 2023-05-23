@@ -2,7 +2,7 @@
 title:  "[프로그래머스 Oracle] Lv 1. 어린 동물 찾기"
 layout: single
 
-categories: "Algorithm_Oracle"
+categories: "Algorithm_SQL"
 
 toc: true
 toc_sticky: true

@@ -2,7 +2,7 @@
 title:  "[프로그래머스 Oracle] Lv 1. 상위 n개 레코드"
 layout: single
 
-categories: "Algorithm_Oracle"
+categories: "Algorithm_SQL"
 tags: ["ROWNUM"]
 
 toc: true

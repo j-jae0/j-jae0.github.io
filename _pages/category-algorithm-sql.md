@@ -1,5 +1,5 @@
 ---
-title: "SQL(MySQL) 프로그래밍"
+title: "SQL 프로그래밍"
 layout: archive
 permalink: categories/Algorithm_SQL
 author_profile: true
