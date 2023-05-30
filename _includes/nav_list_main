@@ -14,7 +14,7 @@
       <li>
 
         <!-- 배운 지식 정리 1 -->
-        <span class="nav__sub-title">Python/SQL</span>
+        <span class="nav__sub-title">Python/SQL/DB</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
@@ -26,6 +26,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
                         <li><a href="/categories/SQL" class="">ㄴ SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DB" %}
+                        <li><a href="/categories/DB" class="">ㄴ DB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
