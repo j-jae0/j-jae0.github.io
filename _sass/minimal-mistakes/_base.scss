@@ -141,6 +141,12 @@ fieldset {
 /* 형광펜 : 회색 */
 .gray_half_HL {background: linear-gradient(to top, #D7DBDD 40%, transparent 0%);}
 
+/* 내가 추가한 것 ~ 밑줄 기능*/
+.red_underline {
+  text-decoration: underline #B40404;
+}
+
+
 /* abbreviations */
 
 abbr[title],
