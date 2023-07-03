@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "🚧🛠️테마 수정하는 중"
+title                    : "기록하며 성장하는 데린이"
 title_separator          : # "-"
 subtitle                 : # "사부작사부작 기록하는 블로그"
 name                     : "Jaeyoung Jung"
@@ -41,7 +41,7 @@ comments:
     num_posts            : # (default) : 5
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "github-light" # "github-light" (default), "github-dark"
+    theme                : "github-dark" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
