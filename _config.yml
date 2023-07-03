@@ -269,7 +269,7 @@ defaults:
       comments: true
       # share: true
       related: false
-      show_date: false  
+      show_date: true  
       sidebar_main: true
       mathjax: true
 
