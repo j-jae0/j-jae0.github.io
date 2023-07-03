@@ -133,89 +133,10 @@ search: false
 } 
 
 @font-face {
-    font-family: 'IMHyemin';
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.ttf') format("truetype");
-    font-display: swap;
-} 
-
-@font-face {
-    font-family: 'IMHyemin';
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.ttf') format("truetype");
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'UhBeeSe_hyun';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     }
 
-@font-face {
-    font-family: 'MapoPeacefull';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.ttf') format("truetype");
-    font-display: swap;
-}
-
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-
-.nanumgothiccoding * {
- font-family: 'Nanum Gothic Coding', monospace;
-}
-
-@import url('https://webfontworld.github.io/NanumSquareRound/NanumSquareRound.css');
-
-@font-face {
-    font-family: 'HallymMjo';
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Regular.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Regular.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Regular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Regular.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Regular.ttf') format("truetype");
-    font-display: swap;
-} 
-@font-face {
-    font-family: 'HallymMjo';
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Bold.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Bold.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Bold.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Bold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/HallymMjo-Bold.ttf') format("truetype");
-    font-display: swap;
-} 
-
-@font-face {
-    font-family: 'MICEGothic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MICEGothic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
+@import url('https://webfontworld.github.io/dgb/IMHyemin.css');
