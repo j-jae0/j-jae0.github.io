@@ -1,7 +1,7 @@
 ---
-title: "선형대수학/통계"
+title: "통계"
 layout: archive
-permalink: categories/Math
+permalink: categories/Statistics
 author_profile: true
 sidebar_main: true
 
@@ -9,5 +9,5 @@ classes: wide
 ---
 
 
-{% assign posts = site.categories.Github-Blog %}
+{% assign posts = site.categories.Statistics %}
 {% for post in posts %} {% include archive-single3.html type=page.entries_layout %} {% endfor %}
