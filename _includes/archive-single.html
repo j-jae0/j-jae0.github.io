@@ -18,13 +18,13 @@
       </div>
     {% endif %}
     <div>
-      <h2 class="archive__item-title no_toc" itemprop="headline">
+      <span class="archive__item-title no_toc" itemprop="headline" style="font-size: 1.5em;">
         {% if post.link %}
           <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
         {% else %}
           <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
         {% endif %}
-      </h2>
+      </span>
       <small> 
         <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
       </small>
