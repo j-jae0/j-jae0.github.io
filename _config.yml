@@ -209,6 +209,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jemoji # 이모지 기능 추가
+  - jekyll-last-modified-at # 수정날짜 기능 추가
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -281,3 +282,5 @@ defaults:
   #     author_profile: false
 
 date_format: "%Y-%m-%d"
+last-modified-at:
+    date-format: "%Y-%m-%d"
