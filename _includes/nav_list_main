@@ -15,8 +15,8 @@
         <span class="nav__sub-title">📚 Today I Learned</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "TIL2307" %}
-                        <li><a href="/categories/TIL2307" class="">ㄴ 2023년 7월 ({{category[1].size}})</a></li>
+                    {% if category[0] == "TIL_202307" %}
+                        <li><a href="/categories/TIL_202307" class="">ㄴ 2023년 7월 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
