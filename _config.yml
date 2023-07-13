@@ -265,10 +265,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      # read_time: flase
+      read_time: true
       comments: true
-      # share: true
-      related: false
+      share: true
+      related: true
       show_date: true  
       sidebar_main: true
       mathjax: true
