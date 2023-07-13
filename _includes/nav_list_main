@@ -12,6 +12,14 @@
         <span> </span>
       </li>
       <li>
+        <span class="nav__sub-title">📚 Today I Learned</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL2307" %}
+                        <li><a href="/categories/TIL2307" class="">ㄴ 2023년 7월 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <!-- 배운 지식 정리 1 -->
         <span class="nav__sub-title">Python/SQL/DB</span>
@@ -129,13 +137,6 @@
 
         <!-- 내가 한 일 정리 -->
         <span class="nav__sub-title">Etc</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "TIL" %}
-                        <li><a href="/categories/TIL" class="">ㄴ TIL ({{category[1].size}})</a></li>
-                    {% endif %}
-            {% endfor %}
-            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Project" %}
