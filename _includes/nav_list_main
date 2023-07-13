@@ -44,6 +44,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Visualization" %}
+                        <li><a href="/categories/Visualization" class="">ㄴ Visualization ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <!-- 배운 지식 정리 2 -->
         <span class="nav__sub-title">ML/DL</span>
