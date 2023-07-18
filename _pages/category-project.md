@@ -1,5 +1,5 @@
 ---
-title: "개인 프로젝트"
+title: "프로젝트 모음"
 layout: archive
 permalink: categories/Project
 author_profile: true
