@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "성장하고 싶은 데이터 분석가 :a"
+title                    : "기록하며 성장하는 데린이 ٩( ᐛ )و"
 title_separator          : # "-"
 subtitle                 : # "사부작사부작 기록하는 블로그"
 name                     : "Jaeyoung Jung"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "정재영"
   avatar           : "https://yt3.ggpht.com/HAW0DwztaccF_6W1XxhAtiYp2kXDTidmTzqoHnmgN-tGzEX9JHxAdBb1XtxHhSuRC5R4sNA2=s240-c-k-c0x00ffffff-no-rj" # "/assets/images/me.jpg"
-  bio              : "기록하며 성장하는 데린이 🌱"
+  bio              : "데이터와 가까워지는 중 🌱"
   location         : # "South Korea"
   email            : #
   links:
