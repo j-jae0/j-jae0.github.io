@@ -1,5 +1,5 @@
 ---
-title: "Python"
+title: "Python, Pandas, Numpy"
 layout: archive
 permalink: categories/Python
 author_profile: true
