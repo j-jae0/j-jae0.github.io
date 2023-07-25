@@ -1,5 +1,5 @@
 ---
-title: "📝 2023년 7월 기록"
+title: "2023년 7월 기록"
 layout: archive
 permalink: categories/TIL_202307
 author_profile: true
