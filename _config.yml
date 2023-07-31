@@ -272,7 +272,7 @@ defaults:
       related: false
       show_date: true  
       sidebar_main: true
-      mathjax: true
+      mathjax: false
 
   # - scope:
   #     path: "_pages"
