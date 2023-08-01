@@ -4,13 +4,12 @@ excerpt: "해커랭크(HackerRank) MySQL, 난이도 MEDIUM 1 문제 풀이"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["JOIN", "IN"]
 
 toc: true
 toc_sticky: true
 toc_label : "목차"
 toc_icon: "bars"
-published: false
 ---
 
 ***
@@ -35,22 +34,36 @@ Hermione decides the best way to choose is by determining the minimum number of 
 </div>
 
 ## (2) 문제 이해
-
+헤르미온느는 지팡이를 교체하려고 한다. 구매하려는 지팡이는 not evil하고 power와 age가 큰 것이다. 만약 power와 age가 동일하다면 저렴한 지팡이 하나를 대표로 출력한다.
+1. 지팡이는 ```not evil``` 할 것
+2. 지팡이의 ```power```와 ```age```가 동일하다면 최저가 지팡이 하나를 출력할 것
+3. 지팡이 목록은 ```power```을 기준으로 내림차순, ```power```가 동일하다면 ```age```를 기준으로 내림차순 할 것
 
 ## (3) 코드 작성
 ```sql
-
+SELECT W.id, WP.age, W.coins_needed, W.power
+FROM Wands AS W
+INNER JOIN Wands_Property AS WP ON W.code = WP.code
+WHERE WP.is_evil = 0 
+AND (W.code, W.power, W.coins_needed) IN (SELECT code
+                                               , power
+                                               , MIN(coins_needed) AS min_coins
+                                          FROM Wands
+                                          GROUP BY code, power)
+ORDER BY W.power DESC, WP.age DESC
 ```
 
 <div style="text-align : center;">
-<img src="/assets/images/algorithm/" width="85%">
+<img src="/assets/images/sql/hackerrank/hackerrank_mysql_18.png" width="85%">
 </div>
 <center><small>위 쿼리의 실행 결과</small></center>
 
 <br>
 
 ## (4) 코드 리뷰
+지팡이의 id, code, coins_needed, power 정보가 담긴 Wands 테이블에 Wands_Property 테이블을 code를 기준으로 INNER JOIN 하였다(age 정보를 가져오기 위함). 그리고 not evil 한 지팡이만 목록에 담기 위해 WHERE 문으로 조건을 넣어주었다(문제 이해 중 1번). 그리고 2번 조건을 만족시키기 위해 서브쿼리를 만들어 age, power 이 동일할 땐 최저가 지팡이만 불러올 수 있도록 작성했다(age 대신 code로 일치 여부를 작성해도 됨, 같은 코드는 같은 age를 가지기 때문).
 
+<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
