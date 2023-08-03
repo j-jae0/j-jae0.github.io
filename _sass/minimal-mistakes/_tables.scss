@@ -25,11 +25,15 @@ th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
+  background-color: #424546; //내가 추가한 것
+  color: #eaeaea; //내가 추가한 것
 }
 
 td {
   padding: 0.5em;
   border-bottom: 1px solid mix(#000, $border-color, 25%);
+  background-color: white; //내가 추가한 것
+  color: #424546; //내가 추가한 것
 }
 
 tr,

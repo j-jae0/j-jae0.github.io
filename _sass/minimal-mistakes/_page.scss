@@ -139,12 +139,17 @@ body {
     }
   }
 
+  // 인라인 코드블럭
   :not(pre) > code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    font-size: 0.8em;
-    background: $code-background-color;
+    padding-left: 0.2rem; // 내가 추가한 것 (inline code block)
+    padding-right: 0.2rem; // 내가 추가한 것 (inline code block)
+    // font-size: 0.85 em;
+    font-family: 'IMHyemin';
+    // background: #ADB9CA; // 스킨 변경 전 #E9ECEF; background: $code-background-color;
     border-radius: $border-radius;
+    color: wheat; // 내가 추가한 것
 
     &::before,
     &::after {
@@ -166,6 +171,7 @@ body {
   }
 
   .small {
+    font-family: "GangwonEduAll"; // 내가 추가한 것
     font-size: $type-size-6;
   }
 
@@ -344,14 +350,38 @@ body {
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
+  border: 1px solid wheat;
   border-radius: $border-radius;
+  color: wheat;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: white;
   }
 }
+
+// 내가 추가한 것
+// .page__taxonomy-item-category {
+//   margin-right: 2px;
+//   margin-bottom: 2px;
+//   padding: 3px 8px;
+//   text-decoration: none;
+//   border: 1px solid #373c3f;
+//   border-radius: 4px;
+//   background-color: #f1d1d1;
+//   color: #7d7d7d;
+// }
+
+// .page__taxonomy-item-tag {
+//   margin-right: 5px;
+//   margin-bottom: 8px;
+//   padding: 3px 8px;
+//   text-decoration: none;
+//   border: 1px solid #373c3f;
+//   border-radius: 4px;
+//   background-color: #ffe6e6;
+//   color: #c5c5c5;
+// }
 
 .taxonomy__section {
   margin-bottom: 2em;

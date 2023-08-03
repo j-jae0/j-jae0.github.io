@@ -31,10 +31,11 @@
   }
 }
 
+// 최근 포스트
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 1.414em 0 0.5em; // 1.414em 0 0.5em
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  font-size: $type-size-5; // defaults:6
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
@@ -44,9 +45,9 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.25em; // 0.25em
   font-family: $sans-serif-narrow;
-  line-height: initial;
+  line-height: initial; // initial
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -62,6 +63,7 @@
   a + a {
     opacity: 0.5;
   }
+
 }
 
 /* remove border*/
@@ -72,9 +74,10 @@
   }
 }
 
+/* 글 밑 내용 미리보기 부분 */
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-6; // default 6
 
   & + p {
     text-indent: 0;
@@ -307,7 +310,7 @@
     }
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 2em; // default 2em
     }
 
     a.btn::before {

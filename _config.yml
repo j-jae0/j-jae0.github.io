@@ -12,26 +12,25 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "사부작사부작 기록하는 블로그"
+title                    : "데이터, 너 혹시 뭐 돼?"
 title_separator          : # "-"
 subtitle                 : # "사부작사부작 기록하는 블로그"
 name                     : "Jaeyoung Jung"
-description              : "오늘의 파란기록"
+description              : "데이터와 가까워지는 중"
 url                      : "https://j-jae0.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "j-jae0/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # "/assets/images/smile.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # false (default)
-future                   : true
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -39,11 +38,11 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 15 # 5 (default)
+    num_posts            : # (default) : 5
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "photon-dark" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
@@ -76,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "e5cd1dce2caa0ab7376882117360671626b5f302"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -105,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jung Jaeyoung"
-  avatar           : "/assets/images/me.jpg"
-  bio              : "집콕하며 멋사 AI 스쿨 수강 중..👩🏻‍💻"
-  location         : "South Korea"
-  email            :
+  name             : "정재영"
+  avatar           : "https://item.kakaocdn.net/do/3727c16c143eb219d7b32939d988611382f3bd8c9735553d03f6f982e10ebe70"
+  bio              : "1일 1문제 푸는 중"
+  location         : # "South Korea"
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jjayounge2e@gmail.com"
+      url: "mailto:younge2e@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
@@ -125,8 +124,11 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
     - label: "Velog"
-      icon: "fa-brands fa-markdown"
+      icon: "fa-thin fa-hippo"
       url: "https://velog.io/@jaeyoung_jung"
+    - label: "Tistory"
+      icon: "fa-thin fa-teddy-bear"
+      url: "https://jaeyoung-jung.tistory.com/"
 
 # Reading Files
 include:
@@ -194,7 +196,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show - Defaults:5
 paginate_path: /page:num/
 timezone: Asia/Seoul
 
@@ -206,6 +208,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji # 이모지 기능 추가
+  - jekyll-last-modified-at # 수정날짜 기능 추가
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -262,10 +266,21 @@ defaults:
     values:
       layout: single
       author_profile: true
-      # read_time: flase
-      comments: # true
-      # share: true
+      read_time: false
+      comments: true
+      share: true
       related: false
       show_date: true  
-      
-#date_format: "%Y-%m-d"            
+      sidebar_main: true
+      mathjax: false
+
+  # - scope:
+  #     path: "_pages"
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: false
+
+date_format: "%Y-%m-%d"
+last-modified-at:
+    date-format: "%Y-%m-%d"

@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.7; // default 1.5
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -60,7 +60,7 @@ h6 {
 
 small,
 .small {
-  font-size: $type-size-6;
+  font-size: .7em; // default : font-size: $type-size-6;
 }
 
 p {
@@ -80,6 +80,31 @@ del a {
   color: inherit;
 }
 
+/* 내가 추가한 것 : 태그영역 꾸미기 */
+.page__taxonomy-item-tag {
+  margin-right: 2px;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+  text-decoration: none;
+  border: 1px solid #de989d;
+  border-radius: 6px;
+  color: #de989d;
+  // background-color: #FAF3F3;
+
+  // 내가 추가한 것 : 마우스 대면 글자색 흰색으로 변경
+  &:hover {
+    color: white;
+    outline: 0;
+  }
+
+  // 방문 기록있을 때 색상 흰색으로 변경
+  &:visited {
+    color: white;
+  }
+
+}
+
+
 /* reduce orphans and widows when printing */
 
 p,
@@ -94,6 +119,33 @@ fieldset {
   orphans: 3;
   widows: 3;
 }
+
+/* 내가 추가한 것 ~ 형광펜 기능*/
+.HL {
+  background-color: #8497B0;
+  color: black; //내가 추가한 것
+}
+
+/* 내가 추가한 것 ~ 형광펜 밑줄 기능*/
+.half_HL {background-color: #00ff0000;} /*{background: linear-gradient(to top, #EF9DA1 40%, transparent 0%);}*/
+/* 형광펜 : 노란색 */
+.y_half_HL {background: linear-gradient(to top, #FCF3CF 40%, transparent 0%);}
+/* 형광펜 : 빨간색 */
+.r_half_HL {background: linear-gradient(to top, #FADBD8 40%, transparent 0%);}
+/* 형광펜 : 파란색 */
+.b_half_HL {background: linear-gradient(to top, #D6EAF8 40%, transparent 0%);}
+/* 형광펜 : 초록색 */
+.g_half_HL {background: linear-gradient(to top, #D5F5E3 40%, transparent 0%);}
+/* 형광펜 : 보라색 */
+.p_half_HL {background: linear-gradient(to top, #E8DAEF 40%, transparent 0%);}
+/* 형광펜 : 회색 */
+.gray_half_HL {background: linear-gradient(to top, #D7DBDD 40%, transparent 0%);}
+
+/* 내가 추가한 것 ~ 밑줄 기능*/
+.red_underline {
+  text-decoration: underline #B40404;
+}
+
 
 /* abbreviations */
 
@@ -110,8 +162,8 @@ blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  // font-style: italic; 지워버림 
+  border-left: 0.25em solid white; // $primary-color;
 
   cite {
     font-style: italic;
@@ -168,7 +220,8 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 3px solid $border-color; /* 기본값: 1px*/
+  border-style: double;
 }
 
 /* lists */

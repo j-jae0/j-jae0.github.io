@@ -15,5 +15,21 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+
+  {% if page.sidebar_main %}
+    {% include nav_list_main %}
+  {% endif %}
+
+   <!-- hits 방문자 수 -->
+    <a href="https://hits.seeyoufarm.com">
+      <style>
+        .hits {
+          width: auto; height: auto;
+          max-width: 99px;
+          max-height: 20px;
+        }
+      </style>
+      <img class="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fj-jae0.github.io&count_bg=%23A8A8A8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"/>
+    </a>
   </div>
 {% endif %}

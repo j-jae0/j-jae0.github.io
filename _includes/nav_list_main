@@ -1,0 +1,121 @@
+<!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수 부분-->
+      <li>
+        <span style="font-family:'BCcardB';">전체 게시물 수</style> <span style="font-family:'UhBeeSe_hyun'; color: #f07178;">{{sum}}</style> <span style="font-family:'BCcardB'; color: #eaeaea;">개</style> 
+        <span> </span>
+      </li>
+      <li>
+        <span class="nav__sub-title">📚 Today I Learned</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL_202307" %}
+                        <li><a href="/categories/TIL_202307" class="">ㄴ 2023년 7월 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <!-- 배운 지식 정리 1 -->
+        <span class="nav__sub-title">Python/SQL/DB</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/Python" class="">ㄴ Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "SQL" %}
+                        <li><a href="/categories/SQL" class="">ㄴ SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DB" %}
+                        <li><a href="/categories/DB" class="">ㄴ DB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Visualization" %}
+                        <li><a href="/categories/Visualization" class="">ㄴ Visualization ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <!-- 배운 지식 정리 2 -->
+        <span class="nav__sub-title">ML/DL</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ML" %}
+                        <li><a href="/categories/ML" class="">ㄴ Machine Learning ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DL" %}
+                        <li><a href="/categories/DL" class="">ㄴ Deep Learning ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Statistics" %}
+                        <li><a href="/categories/Statistics" class="">ㄴ Statistics ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <!-- 코테 정리 -->
+        <span class="nav__sub-title">코딩 테스트</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm_Python" %}
+                        <li><a href="/categories/Algorithm_Python" class="">ㄴ Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm_SQL" %}
+                        <li><a href="/categories/Algorithm_SQL" class="">ㄴ SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <!-- 그 외 -->
+        <span class="nav__sub-title">Etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Project" %}
+                        <li><a href="/categories/Project" class="">ㄴ 프로젝트 ({{category[1].size}})</a></li>
+                    {% endif %}
+            {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Github" %}
+                        <li><a href="/categories/Github" class="">ㄴ Git/Github ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Error-Warning" %}
+                        <li><a href="/categories/Error-Warning" class="">ㄴ 에러/경고 메시지 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+  </ul>
+</nav>
